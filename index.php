@@ -60,14 +60,14 @@
             mysqli_query($conn,$sql);
             session_destroy();
             unset($_SESSION['client']);
-            header("Location: http://localhost/phppractice/project%20structure/index.php");
+            header("Location: https://mysterious-thicket-17456.herokuapp.com/index.php");
             // unset($_SESSION['client']);
 
         }
 
         if ( isset($_POST['my_orders']) ){
             $_SESSION['my_orders'] = $_POST['my_orders'];
-            header("Location: http://localhost/phppractice/project%20structure/client/myOrders.php");
+            header("Location: https://mysterious-thicket-17456.herokuapp.com/client/myOrders.php");
             exit();
         }
     ?>
@@ -136,7 +136,7 @@
             // echo "<h3> You will be redirected to your home in 5 4 3 2 1 ...:)</h3><br>";
             session_destroy();
             unset($_SESSION['client']);
-            header("Refresh:5; url=http://localhost/phppractice/project%20structure/login.php");
+            header("Refresh:5; url=https://mysterious-thicket-17456.herokuapp.com/login.php");
             // sleep(5);
         }
         
