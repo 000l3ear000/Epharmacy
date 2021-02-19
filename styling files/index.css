@@ -1,0 +1,46 @@
+body{
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(31,218,200,1) 64%, rgba(252,176,69,1) 100%); 
+}
+
+.indexForm {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+  background-color: pink;
+}
+
+
+.indexForm :nth-child(1) {
+  width: 33%;
+}
+
+.main-btns {
+  float: right;
+  margin-right: 20px;
+  margin-top: 10px;
+  padding: 5px;
+}
+.main-btns > a {
+  margin-right: 10px;
+}
+
+.result {
+  width: 500px;
+  margin: 0 auto;
+  
+  background-color: #ccc;
+  margin-top: 2px;
+  text-align: center;
+}
+.result>a{
+    color: lightcoral;
+    text-decoration: none;
+}
+
+.result>a:hover{
+    color: white;
+    
+}
