@@ -27,7 +27,7 @@ if (isset($_POST["submit"])) {
             header("Location: http://localhost/phppractice/project%20structure/admin/admin.php");
             //redirect goes here
         } else {
-            echo "nikal bsdk";
+            echo "Wrong password Admin brother";
         }
     } else if (strtolower(substr($var, 0, 2)) == "em") {
 
@@ -47,7 +47,7 @@ if (isset($_POST["submit"])) {
                 echo "YOU ARE NOT ALLOWED TO ACCESS THIS SECTION!!!";
             }
         } else {
-            echo "nikal bsdk";
+            echo "You are not yet registered yet. Have patience admin will add you soon :)";
         }
     } else if (strtolower(substr($var, 0, 2)) == "cl") {
         $var = $_POST["id"];
@@ -66,14 +66,14 @@ if (isset($_POST["submit"])) {
             exit();
             //redirect goes here
         } else {
-            echo "nikal bsdk";
-            echo "Signup bsdk!";
+            echo "You are not in our database";
+            echo "You need to signup first";
             // header("Location:  http://localhost/phppractice/project%20structure/signup.php");
             // exit();
 
         }
     } else {
-        echo "Phuck you!! invalid username";
+        echo "invalid username";
     }
 }
 

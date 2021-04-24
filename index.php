@@ -11,9 +11,10 @@
     <link rel="stylesheet" href="./styling files/index.css">
     <title>E Medical Store</title>
 </head>
-<body>
 
-    
+<body>
+        
+
         <form action="" class="indexForm" method="POST">
             <input class="search_bar" name="search" required type="text" placeholder="Search your medicine">
             <input value='Search' id="search" name='search_btn' class="btn btn-success" type="submit">
@@ -25,6 +26,8 @@
                 <option value="getz">getz</option>
                 <option value="abbott">abbott</option>
             </select>
+            <h1>Saad Khan 21-11272</h1>
+            <h1>Osama Nadeem 21-11379</h1>
         </form> 
 
     <div class="main">
@@ -60,14 +63,14 @@
             mysqli_query($conn,$sql);
             session_destroy();
             unset($_SESSION['client']);
-            header("Location: https://mysterious-thicket-17456.herokuapp.com/index.php");
+            header("Location: http://localhost/phppractice/project%20structure/index.php");
             // unset($_SESSION['client']);
 
         }
 
         if ( isset($_POST['my_orders']) ){
             $_SESSION['my_orders'] = $_POST['my_orders'];
-            header("Location: https://mysterious-thicket-17456.herokuapp.com/client/myOrders.php");
+            header("Location: http://localhost/phppractice/project%20structure/client/myOrders.php");
             exit();
         }
     ?>
@@ -136,7 +139,7 @@
             // echo "<h3> You will be redirected to your home in 5 4 3 2 1 ...:)</h3><br>";
             session_destroy();
             unset($_SESSION['client']);
-            header("Refresh:5; url=https://mysterious-thicket-17456.herokuapp.com/login.php");
+            header("Refresh:5; url=http://localhost/phppractice/project%20structure/login.php");
             // sleep(5);
         }
         
